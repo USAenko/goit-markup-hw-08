@@ -1,8 +1,11 @@
 .container {
     margin: 0 auto;
-    // width: 480px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @include mq(mob-only){
+        max-width: 480px;
+    }
 
     @include mq(tab){
         width: 738px;
@@ -26,13 +29,11 @@
     @include mq(tab){
         flex-direction: row;
         flex-wrap: wrap;
-        // align-items: flex-start;
-        justify-content: space-between;
     }
 
     @include mq(desc){
-        flex-direction: row;
-        align-items: baseline;
+        // flex-direction: row;
+        // align-items: baseline;
     }
 }
 
