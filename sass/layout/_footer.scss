@@ -1,6 +1,11 @@
 .footer {
     padding: 60px 0;
     background-color: var(--dark-background);
+    text-align: center;
+
+    @include mq(desc){
+        text-align: left;
+    }
 }
 
 .footer-adress {
@@ -12,14 +17,22 @@
     color: var(--negative-color);
 
     .footer-adress__list {
-        margin-top: 9px;
+        margin-top: 8px;
+
+        @include mq(desc){
+            margin-top: 9px;
+        }
     }
 
     .footer-adress__item {
         display: block;
 
         &:not(:first-child) {
-            margin-top: 9px;
+            margin-top: 8px;
+
+            @include mq(desc){
+                margin-top: 9px;
+            }
         }
     }
 
@@ -39,10 +52,22 @@
 }
 
 .footerbox {
-    margin-left: 70px;
+    width: 100%;
+    margin-top: 60px;
+
+    @include mq(tab){
+        width: calc((100% / 2) - 30px)
+    }
+
+    @include mq(desc){
+        margin-top: 0;
+        margin-left: 70px;
+    }
 
     &:last-child {
-        margin-left: auto;
+        @include mq(desc){
+            margin-left: auto;
+        } 
     }
 
     .footerbox__title {
@@ -56,7 +81,7 @@
 
     .footerbox__input {
         margin-top: 20px;
-        min-width: 358px;
+        width: 100%;
         color: var(--negative-color);
         padding: 16px 15px;
         font-size: 16px;

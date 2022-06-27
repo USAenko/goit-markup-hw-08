@@ -1,23 +1,30 @@
 .client-list {
-    display: flex;
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-gap);
+
+    @include mq(mob-only){
+        --card-item: 2;
+    }
+    
+    @include mq(tab) {
+        --card-item: 3;
+    }
+    
+    @include mq(desc) {
+        --card-item: 6;
+    }
+    
 
     .client-list__item {
-        width: 170px;
         height: 92px;
-
-        &:not(:first-child) {
-                margin-left: 30px;
-            }
-    }
-
-    
+    }    
 
     .client-list__link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
         height: 92px;
 
         border: 1px solid var(--svg-icon);

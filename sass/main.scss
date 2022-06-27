@@ -1,7 +1,9 @@
 @import './utils/variables';
 @import './utils/reset';
+@import './utils/mixin';
 
 @import './base/common';
+@import './base/card-se';
 
 @import './layout/header';
 @import './layout/hero';

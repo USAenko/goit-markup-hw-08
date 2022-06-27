@@ -4,6 +4,10 @@
     align-items: baseline;
     .nav__list--header {
             margin-left: 93px;
+
+            @include mq(tab-only){
+                margin-left: 88px;
+            }
         }
 
         .nav__item:not(:first-child) {
