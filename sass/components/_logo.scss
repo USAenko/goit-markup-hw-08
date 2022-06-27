@@ -6,6 +6,10 @@
     color: var(--accent-color);
     text-decoration: none;
 
+    @include mq(mob-only){
+        padding: 15px 0;
+    }
+
     @include mq(desc){
         font-size: 26px;
         line-height: calc(31 / 26);

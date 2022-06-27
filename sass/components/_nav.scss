@@ -2,6 +2,11 @@
 .nav__list {
     display: flex;
     align-items: baseline;
+
+    @include mq(mob-only){
+        display: none;
+    }
+
     .nav__list--header {
             margin-left: 93px;
 

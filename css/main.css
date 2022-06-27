@@ -138,8 +138,8 @@ img {
   border-bottom: 1px solid #ececec;
 }
 @media (max-width: 767.98px) {
-  .header {
-    display: none;
+  .header .container--flex {
+    justify-content: space-between;
   }
 }
 
@@ -437,22 +437,26 @@ img {
   color: var(--accent-color);
 }
 
-.footerbox {
-  margin-top: 60px;
-}
 @media (max-width: 767.98px) {
   .footerbox {
     width: 100%;
+    margin-top: 60px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .footerbox {
-    width: calc(50% - 30px);
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
   .footerbox {
     margin-left: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .footerbox:last-child {
+    margin-top: 60px;
+    width: 480px;
   }
 }
 @media (min-width: 1200px) {
@@ -482,6 +486,16 @@ img {
 @media (max-width: 767.98px) {
   .footerbox .footerbox__input {
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .footerbox .footerbox__input {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .footerbox .footerbox__input {
+    width: 358px;
   }
 }
 .footerbox .footerbox__input:hover, .footerbox .footerbox__input:focus {
@@ -671,12 +685,27 @@ img {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
+@media (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+}
+
 .nav,
 .nav__list {
   display: flex;
   align-items: baseline;
+}
+@media (max-width: 767.98px) {
+  .nav,
+.nav__list {
+    display: none;
+  }
 }
 .nav .nav__list--header,
 .nav__list .nav__list--header {
@@ -740,8 +769,10 @@ img {
   }
 }
 
-.section--features {
-  padding-bottom: 0;
+@media (min-width: 1200px) {
+  .section--features {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -762,6 +793,11 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
+@media (max-width: 767.98px) {
+  .logo {
+    padding: 15px 0;
+  }
+}
 @media (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -779,6 +815,11 @@ img {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .contacts {

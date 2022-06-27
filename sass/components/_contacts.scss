@@ -3,6 +3,10 @@
     flex-direction: column;
     margin-left: auto;
 
+    @include mq(mob-only){
+        display: none;
+    }
+
     @include mq(desc){
         flex-direction: row;
     }

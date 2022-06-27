@@ -52,21 +52,25 @@
 }
 
 .footerbox {
-    margin-top: 60px;
     @include mq(mob-only){
         width: 100%;
+        margin-top: 60px;
     }
     
-
-    @include mq(tab){
-        width: calc((100% / 2) - 30px)
+    @include mq(tab-only){
+        width: 50%;
     }
 
     @include mq(desc){
         margin-left: 70px;
-    }
+        }
 
     &:last-child {
+
+        @include mq(tab-only) {
+            margin-top: 60px;
+            width: 480px;
+        }
 
         @include mq(desc){
             margin-left: auto;
@@ -98,6 +102,14 @@
 
         @include mq(mob-only){
             width: 100%;
+        }
+
+        @include mq(tab-only){
+            width: 100%;
+        }
+
+        @include mq(desc) {
+            width: 358px;
         }
 
         &:hover,

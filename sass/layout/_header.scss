@@ -1,7 +1,13 @@
 .header {
     border-bottom: 1px solid #ececec;
 
-    @include mq(mob-only){
-        display: none;
+    // @include mq(mob-only){
+    //     display: none;
+    // }
+
+    & .container--flex{
+        @include mq(mob-only){
+            justify-content: space-between;
+        }
     }
 }
