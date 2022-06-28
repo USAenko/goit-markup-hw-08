@@ -30,14 +30,21 @@
     }
     }
 
+    // .portfolio-list{
+        
+    // }
+
     .portfolio-list__borderbox {
+        flex-grow: 1;
         padding: 24px 20px;
         border: 1px solid #EEEEEE;
         border-top: transparent;
     }
 
     .portfolio-list__link {
-        display: block;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         text-decoration-line: none;
 
         transition-property: box-shadow;
@@ -94,6 +101,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        letter-spacing: 0.06em;
         color: var(--primary-text-color);
     }
 
