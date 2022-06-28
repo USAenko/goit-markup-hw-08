@@ -70,6 +70,12 @@
         height: 101%;
         padding: 63px 24px;
 
+        @media (max-width: 360px){
+            padding: 24px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
         font-size: 18px;
         line-height: 1.55;
         color: var(--negative-color);
