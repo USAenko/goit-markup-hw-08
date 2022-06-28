@@ -40,7 +40,7 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -316,10 +316,20 @@ img {
 
 .portfolio-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-.portfolio-buttons__item:not(:first-child) {
-  margin-left: 8px;
+@media (min-width: 768px) {
+  .portfolio-buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .portfolio-list {
@@ -662,7 +672,7 @@ img {
 }
 @media (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -864,6 +874,8 @@ img {
 }
 @media (min-width: 1200px) {
   .contacts .contacts__link--envelope {
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
   }
 }
@@ -873,6 +885,7 @@ img {
 }
 @media (min-width: 1200px) {
   .contacts .contacts__link--smartphone {
+    height: 16px;
     margin-right: 10px;
   }
 }
