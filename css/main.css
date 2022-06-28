@@ -981,6 +981,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
   background-color: var(--negative-color);
 }
 .mob-menu .mob-menu .container {
