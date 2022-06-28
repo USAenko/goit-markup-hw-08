@@ -161,19 +161,31 @@
             <li class="work-list__item">
               <div class="work-list__img">
                 <p class="work-list__text">Десктопные приложения</p>
-                <img src="./images/activity/box1.jpg" alt="activity1" />
+                <img
+                  srcset="./images/activity/box1.jpg 1x, ./images/activity/box1-2x.jpg 2x"
+                  src="./images/activity/box1.jpg"
+                  alt="activity1"
+                />
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__img">
                 <p class="work-list__text">Мобильные приложения</p>
-                <img src="./images/activity/box2.jpg" alt="activity2" />
+                <img
+                  srcset="./images/activity/box2.jpg 1x, ./images/activity/box2-2x.jpg 2x"
+                  src="./images/activity/box2.jpg"
+                  alt="activity2"
+                />
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-list__img">
                 <p class="work-list__text">Дизайнерские решения</p>
-                <img src="./images/activity/box3.jpg" alt="activity3" />
+                <img
+                  srcset="./images/activity/box3.jpg 1x, ./images/activity/box3-2x.jpg 2x"
+                  src="./images/activity/box3.jpg"
+                  alt="activity3"
+                />
               </div>
             </li>
           </ul>
@@ -185,7 +197,21 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list card-set">
             <li class="team-list__item card-set__item">
-              <img src="./images/team/igor.jpg" alt="teammate1" />
+              <picture>
+                <source
+                  srcset="./images/team/igor-desc-1x.jpg 1x, ./images/team/igor-desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/igor-tab-1x.jpg 1x, ./images/team/igor-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/igor-mob-1x.jpg 1x, ./images/team/igor-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/igor-mob-1x.jpg" alt="teammate1" />
+              </picture>
               <div class="team-list__member">
                 <h3 class="team-list__member-name">Игорь Демьяненко</h3>
                 <p class="team-list__member-position">Product Designer</p>
@@ -222,7 +248,21 @@
               </div>
             </li>
             <li class="team-list__item card-set__item">
-              <img src="./images/team/olga.jpg" alt="teammate2" />
+              <picture>
+                <source
+                  srcset="./images/team/olga-desc-1x.jpg 1x, ./images/team/olga-desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/olga-tab-1x.jpg 1x, ./images/team/olga-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/olga-mob-1x.jpg 1x, ./images/team/olga-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/olga-mob-1x.jpg" alt="teammate2" />
+              </picture>
               <div class="team-list__member">
                 <h3 class="team-list__member-name">Ольга Репина</h3>
                 <p class="team-list__member-position">Frontend Developer</p>
@@ -259,7 +299,24 @@
               </div>
             </li>
             <li class="team-list__item card-set__item">
-              <img src="./images/team/nikolay.jpg" alt="teammate3" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikolay-desc-1x.jpg 1x,
+                    ./images/team/nikolay-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/nikolay-tab-1x.jpg 1x, ./images/team/nikolay-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/nikolay-mob-1x.jpg 1x, ./images/team/nikolay-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/nikolay-mob-1x.jpg" alt="teammate3" />
+              </picture>
               <div class="team-list__member">
                 <h3 class="team-list__member-name">Николай Тарасов</h3>
                 <p class="team-list__member-position">Marketing</p>
@@ -296,7 +353,25 @@
               </div>
             </li>
             <li class="team-list__item card-set__item">
-              <img src="./images/team/mikhail.jpg" alt="teammate4" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mikhail-desc-1x.jpg 1x,
+                    ./images/team/mikhail-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/mikhail-tab-1x.jpg 1x, ./images/team/mikhail-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mikhail-mob-1x.jpg 1x, ./images/team/mikhail-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/mikhail-mob-1x.jpg" alt="teammate4" />
+              </picture>
+
               <div class="team-list__member">
                 <h3 class="team-list__member-name">Михаил Ермаков</h3>
                 <p class="team-list__member-position">UI Designer</p>
