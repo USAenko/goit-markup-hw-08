@@ -8,6 +8,14 @@ img {
     height: auto;
 }
 
+body {
+    font-family: var(--font-roboto);
+    letter-spacing: 0.03em;
+
+    background-color: var(--negative-color);
+    color: var(--primary-text-color);
+}
+
 .button {
     font-weight: 700;
     font-size: 16px;
@@ -60,11 +68,14 @@ img {
 
     &--mailing {
         margin-top: 20px;
-        margin-left: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px 32px;
+
+        @include mq(desc){
+            margin-left: 12px;
+        }
 
         &:hover,
         &:focus {

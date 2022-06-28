@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     top: 0;
+    transform: translateX(100%);
     padding: 48px 15px;
 
     display: flex;
@@ -11,7 +12,11 @@
     justify-content: space-between;
     overflow: auto;
     background-color: var(--negative-color);
+    transition: transform 250ms linear;
 
+    &.is-open{
+        transform: translateX(0);
+    }
     .mob-menu .container{
         display: flex;
         flex-direction: column;
