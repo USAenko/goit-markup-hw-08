@@ -67,9 +67,15 @@
         height: 101%;
         padding: 63px 24px;
 
-        @media (max-width: 360px){
-            padding: 24px;
+        @media (max-width: 465px){
+            padding: 36px;
             font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 380px) {
+            padding: 24px;
+            font-size: 14px;
             line-height: 1.5;
         }
 
