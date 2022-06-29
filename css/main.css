@@ -491,8 +491,8 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .footerbox {
-    width: 50%;
+  .footerbox .footerbox::first-child {
+    align-self: baseline;
   }
 }
 @media (min-width: 1200px) {
@@ -736,20 +736,22 @@ body {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: baseline;
+}
+@media (max-width: 767.98px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (min-width: 768px) {
   .footer-container {
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 @media (min-width: 1200px) {
   .footer-container {
-    flex-direction: row;
-    align-items: baseline;
     justify-content: flex-start;
   }
 }
