@@ -20,7 +20,8 @@
 }
 
 .backdrop.is-hidden .modal {
-    @include mq(tab){
-        transform: translate(-50%, -50%) scale(1.3);
-    }
+    transform: translate(-50%, -50%) scale(1.3);
+    // @include mq(tab){
+        
+    // }
 }
